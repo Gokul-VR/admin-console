@@ -240,7 +240,7 @@ const Sidebar = ({ isOpen, toggle, collapsed = false }: SidebarProps) => {
       {/* Desktop sidebar */}
       <div
         className={cn(
-          "fixed top-0 bottom-0 h-screen flex flex-col z-40 overflow-hidden bg-sidebar text-sidebar-foreground md:flex dark:border-r",
+          "fixed top-0 bottom-0 h-screen flex-col z-40 overflow-hidden bg-sidebar text-sidebar-foreground md:flex dark:border-r hidden",
           collapsed ? "w-16" : "w-56",
           collapsed ? "text-center" : "text-left"
         )}
