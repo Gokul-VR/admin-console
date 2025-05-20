@@ -10,10 +10,10 @@ const Profile = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const [profileImage, setProfileImage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
-    name: "John Doe",
-    email: "john.doe@example.com",
-    phone: "+1 234 567 890",
-    location: "New York, USA",
+    name: "Gokul",
+    email: "gokul@example.com",
+    phone: "+91 1234567890",
+    location: "Kerala, India",
     bio: "Software Developer passionate about creating amazing user experiences.",
   });
 
@@ -61,8 +61,8 @@ const Profile = () => {
   };
 
   const ProfileInformation = () => (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <Card className="md:col-span-1">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <Card className="lg:col-span-1 w-full max-w-md mx-auto lg:mx-0">
         <CardHeader>
           <CardTitle>Profile Picture</CardTitle>
         </CardHeader>
@@ -91,7 +91,7 @@ const Profile = () => {
         </CardContent>
       </Card>
 
-      <Card className="md:col-span-2">
+      <Card className="lg:col-span-2 w-full max-w-2xl mx-auto lg:mx-0">
         <CardHeader>
           <CardTitle>Personal Information</CardTitle>
         </CardHeader>
@@ -162,13 +162,13 @@ const Profile = () => {
               name="bio"
               value={formData.bio}
               onChange={handleInputChange}
-              className="w-full min-h-[100px] p-3 rounded-md border border-input bg-background"
+              className="w-full min-h-[100px] p-3 rounded-md border border-input bg-background resize-none"
             />
           </div>
 
-          <div className="flex justify-end gap-4">
-            <Button variant="outline">Cancel</Button>
-            <Button>Save Changes</Button>
+          <div className="flex flex-col sm:flex-row justify-end gap-4">
+            <Button variant="outline" className="w-full sm:w-auto">Cancel</Button>
+            <Button className="w-full sm:w-auto">Save Changes</Button>
           </div>
         </CardContent>
       </Card>
@@ -275,13 +275,12 @@ const Profile = () => {
   );
 
   return (
-    <div className="p-6 bg-background text-foreground min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-foreground">Profile Settings</h1>
-      
+    <div className="bg-background text-foreground min-h-screen w-full max-w-full overflow-x-auto">
+      <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-foreground">Profile Settings</h1>
       <div className="space-y-6">
         <div 
           ref={containerRef}
-          className="inline-flex bg-muted p-1 rounded-lg relative"
+          className="inline-flex flex-nowrap bg-muted p-1 rounded-lg relative overflow-x-auto max-w-full scrollbar-hide"
         >
           <div
             ref={activePillRef}

@@ -35,7 +35,7 @@ const recentSales = [
 
 export function RecentSales() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 ">
       {recentSales.map((sale) => (
         <div key={sale.email} className="flex items-center">
           <Avatar className="h-9 w-9">

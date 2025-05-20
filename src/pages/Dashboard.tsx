@@ -55,7 +55,7 @@ export function Dashboard() {
         </Card>
       </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-        <Card className="col-span-4 bg-card border-border">
+        <Card className="md:col-span-4 col-span-12 bg-card border-border">
           <CardHeader>
             <CardTitle className="text-foreground">Overview</CardTitle>
           </CardHeader>
@@ -63,7 +63,7 @@ export function Dashboard() {
             <Overview />
           </CardContent>
         </Card>
-        <Card className="col-span-3 bg-card border-border">
+        <Card className="md:col-span-3 col-span-12 bg-card border-border">
           <CardHeader>
             <CardTitle className="text-foreground">Recent Sales</CardTitle>
           </CardHeader>

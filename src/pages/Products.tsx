@@ -101,13 +101,13 @@ export function Products() {
   );
 
   return (
-    <div className="p-6 bg-background text-foreground min-h-screen">
+    <div className="p-1 bg-background text-foreground min-h-screen">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-foreground">Products</h2>
         <Button>Add Product</Button>
       </div>
 
-      <div className="bg-card rounded-lg shadow-sm border border-border">
+      <div className="bg-card rounded-lg border border-border">
         <Table>
           <TableHeader>
             <TableRow>

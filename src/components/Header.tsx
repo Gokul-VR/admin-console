@@ -43,21 +43,6 @@ const Header = ({ userInfo, toggleSidebar }: HeaderProps) => {
       )}
     >
       <div className="flex items-center gap-4">
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden focus:ring-2 focus:ring-offset-2"
-          style={
-            {
-              "--tw-ring-color": primaryColor,
-            } as React.CSSProperties
-          }
-          onClick={toggleSidebar}
-        >
-          <Menu className="h-5 w-5" />
-        </Button>
-      </div>
-      <div className="flex items-center gap-4 mr-2 md:mr-6">
         <div className="relative hidden md:block">
           <Search
             className={cn(
@@ -102,7 +87,7 @@ const Header = ({ userInfo, toggleSidebar }: HeaderProps) => {
           </PopoverTrigger>
           <PopoverContent
             className={cn(
-              "w-80 p-0",
+              "w-80 p-0 mr-2",
               theme === "dark"
                 ? "bg-gray-800 border-gray-700"
                 : "bg-white border-gray-200"
@@ -165,7 +150,7 @@ const Header = ({ userInfo, toggleSidebar }: HeaderProps) => {
               <Button
                 variant="ghost"
                 size="sm"
-                className="w-full text-xs focus:ring-1 focus:ring-offset-1 rounded-sm"
+                className="w-full text-xs rounded-sm"
                 style={
                   { "--tw-ring-color": primaryColor } as React.CSSProperties
                 }

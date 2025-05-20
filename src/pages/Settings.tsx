@@ -5,12 +5,12 @@ const Settings: React.FC = () => {
   const { theme, primaryColor, secondaryColor, toggleTheme, setPrimaryColor, setSecondaryColor } = useTheme();
 
   return (
-    <div className="p-6 bg-background text-foreground min-h-screen">
+    <div className="bg-background text-foreground min-h-screen">
       <h1 className="text-2xl font-bold mb-6 text-foreground">Settings</h1>
       
       <div className="space-y-6">
         {/* Theme Toggle Section */}
-        <div className="bg-card p-6 rounded-lg shadow border border-border">
+        <div className="bg-card p-6 rounded-lg  border border-border">
           <h2 className="text-xl font-semibold mb-4 text-foreground">Theme Settings</h2>
           <div className="flex items-center justify-between">
             <span className="text-muted-foreground">Dark Mode</span>
@@ -30,7 +30,7 @@ const Settings: React.FC = () => {
         </div>
 
         {/* Color Settings Section */}
-        <div className="bg-card p-6 rounded-lg shadow border border-border">
+        <div className="bg-card p-6 rounded-lg  border border-border">
           <h2 className="text-xl font-semibold mb-4 text-foreground">Color Settings</h2>
           
           <div className="space-y-4">
