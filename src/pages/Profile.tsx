@@ -297,7 +297,7 @@ const Profile = () => {
               ref={(el) => {
                 tabRefs.current[index] = el;
               }}
-              className={`relative z-10 flex items-center gap-2 py-2 px-6 text-sm font-medium rounded-lg transition-colors hover:cursor-pointer ${
+              className={`relative flex items-center gap-2 py-2 px-6 text-sm font-medium rounded-lg transition-colors hover:cursor-pointer ${
                 activeTab === tab.id
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
