@@ -341,7 +341,7 @@ const KanbanBoard: React.FC = () => {
   return (
     <div className="relative h-[calc(100vh-7rem)]" onDragEnd={handleDragEnd}>
       {/* Fixed Add Column Button */}
-      <div className="absolute top-0 right-0 z-10">
+      <div className="absolute top-0 right-0">
         <button
           onClick={() => setShowAddColumnModal(true)}
           className="btn-primary rounded-sm p-2"
