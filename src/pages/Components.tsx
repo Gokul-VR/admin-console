@@ -49,7 +49,7 @@ const ComponentsPage = () => {
   const [time, setTime] = useState("12:00");
 
   return (
-    <div className="bg-background text-foreground min-h-screen p-4 space-y-12">
+    <div className="bg-background text-foreground min-h-screen p-2 space-y-12">
       {/* Alert Section */}
       <section className="bg-card p-6 rounded-xl shadow-sm border border-border">
         <h2 className="text-xl font-semibold mb-6 text-foreground">Alert</h2>

@@ -189,7 +189,7 @@ const Header = ({ userInfo, toggleSidebar }: HeaderProps) => {
               </span>
             </div>
           )}
-          <div className="text-right hidden sm:block">
+          <div className="text-left hidden sm:block">
             <h3 className="text-sm font-semibold">{userInfo.name}</h3>
             <p
               className={cn(

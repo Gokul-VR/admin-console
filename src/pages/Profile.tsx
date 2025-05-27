@@ -62,7 +62,7 @@ const Profile = () => {
 
   const ProfileInformation = () => (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <Card className="lg:col-span-1 w-full">
+      <Card className="lg:col-span-1 w-full ">
         <CardHeader>
           <CardTitle>Profile Picture</CardTitle>
         </CardHeader>
@@ -91,7 +91,7 @@ const Profile = () => {
         </CardContent>
       </Card>
 
-      <Card className="lg:col-span-2 w-full">
+      <Card className="lg:col-span-2 w-full ">
         <CardHeader>
           <CardTitle>Personal Information</CardTitle>
         </CardHeader>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import { Trash } from "lucide-react";
+import { cn } from "../lib/utils";
 
 interface User {
   id: string;
@@ -404,7 +405,10 @@ const KanbanBoard: React.FC = () => {
                         <div className="absolute -top-1 left-0 right-0 h-1 bg-primary rounded-full z-10"></div>
                       )}
                     <div
-                      className="bg-background border border-border rounded-md p-3 cursor-pointer text-foreground flex flex-col gap-2 w-full"
+                      className={cn(
+                        "bg-background border border-border rounded-md p-3 cursor-pointer text-foreground flex flex-col gap-2 w-full",
+                        draggedCard?.card.id === card.id ? "opacity-40" : ""
+                      )}
                       draggable
                       onDragStart={() => handleDragStart(card, column.id)}
                       onClick={() => openEditCardModal(column.id, card)}

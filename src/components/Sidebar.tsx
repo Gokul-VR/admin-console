@@ -95,8 +95,8 @@ const SidebarGroup = ({
                   className={cn(
                     "flex items-center gap-3 px-1 py-3 text-sm font-medium rounded-lg transition-all duration-300 ease-in-out hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative group justify-center z-10",
                     currentPath === item.href
-                      ? "bg-primary text-white hover:bg-primary/90"
-                      : "hover:bg-gray-100"
+                      ? "bg-primary text-white"
+                      : "hover:bg-primary/10"
                   )}
                 >
                   <item.icon className="h-5 w-5 p-0 transition-colors duration-300" />

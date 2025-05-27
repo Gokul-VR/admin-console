@@ -25,12 +25,16 @@ export function MainLayout() {
           collapsed={sidebarCollapsed}
         />
       </div>
+
       {/* Mobile Sidebar (overlay) */}
-      <Sidebar
-        isOpen={sidebarOpen}
-        toggle={() => setSidebarOpen(!sidebarOpen)}
-        collapsed={sidebarCollapsed}
-      />
+      <div className="block md:hidden">
+        <Sidebar
+          isOpen={sidebarOpen}
+          toggle={() => setSidebarOpen(!sidebarOpen)}
+          collapsed={sidebarCollapsed}
+        />
+      </div>
+
       {/* Main content */}
       <div className="flex flex-1 flex-col min-h-screen min-w-0">
         <div
